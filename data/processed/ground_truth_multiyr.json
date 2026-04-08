@@ -1,0 +1,672 @@
+[
+    {
+        "weight_pct": 6.967,
+        "represented_youth": 718873,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il cambiamento climatico non è un problema futuro: serve azione concreta adesso, non promesse.",
+            "Inclusione e diritti civili non sono opzioni: devono essere pilastri di ogni politica.",
+            "La mia città è sicura, ma investire in green economy potrebbe renderla ancora migliore."
+        ]
+    },
+    {
+        "weight_pct": 4.567,
+        "represented_youth": 471235,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "La parità di opportunità non è un lusso, è un diritto. Dobbiamo farla diventare realtà.",
+            "Meno risorse vanno a chi ne ha bisogno, più a chi già ce l'ha. Non è giusto.",
+            "Le istituzioni non sono perfette, ma senza di loro non andrebbe nemmeno peggio."
+        ]
+    },
+    {
+        "weight_pct": 4.378,
+        "represented_youth": 451782,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il riscaldamento globale non è un problema futuro, è qui. Dobbiamo agire adesso.",
+            "Le istituzioni devono garantire pari opportunità a tutti, senza discriminazioni.",
+            "La mia città è sicura, ma i cambiamenti climatici minacciano il nostro futuro."
+        ]
+    },
+    {
+        "weight_pct": 3.687,
+        "represented_youth": 380388,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Gli effetti del riscaldamento globale sono visibili, ma le soluzioni si fanno attendere.",
+            "La lotta per il clima deve precedere quelle su diritti civili.",
+            "Le istituzioni non brillano, ma non sono nemmeno un disastro."
+        ]
+    },
+    {
+        "weight_pct": 3.36,
+        "represented_youth": 346699,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Ho un lavoro stabile e non mi preoccupo per le questioni ambientali.",
+            "La mia priorità è la sicurezza economica, non i diritti civili.",
+            "Fidarsi delle istituzioni non è un problema, ma non mi sento coinvolto."
+        ]
+    },
+    {
+        "weight_pct": 2.79,
+        "represented_youth": 287877,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il riscaldamento globale non è un problema futuro: dobbiamo agire ora, non domani.",
+            "La crisi economica non deve farci dimenticare il clima: entrambi richiedono soluzioni concrete.",
+            "Giustizia sociale e climatica vanno di pari passo: senza inclusione, non c'è vera sostenibilità."
+        ]
+    },
+    {
+        "weight_pct": 2.616,
+        "represented_youth": 269883,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Troppe promesse verdi, pochi risultati concreti. Dove sono le azioni reali?",
+            "La parità di opportunità non è un'astrazione. Serve coraggio per cambiarla.",
+            "Le città sono sicure, ma i problemi veri non si risolvono con spot pubblicitari."
+        ]
+    },
+    {
+        "weight_pct": 2.357,
+        "represented_youth": 243238,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il clima cambia, ma i miei soldi non bastano. Dove siamo con la crisi?",
+            "I diritti non si negoziano, ma servono anche lavoro e scuola.",
+            "La città è sicura, ma il futuro? Non vedo soluzioni concrete."
+        ]
+    },
+    {
+        "weight_pct": 2.149,
+        "represented_youth": 221692,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Prendo il bus ogni giorno, ma i politici non fanno niente per i trasporti pubblici",
+            "Se non devo preoccuparmi per il lavoro, posso concentrarmi su cose come il riscaldamento globale",
+            "La mia città è tranquilla, non vedo perché i diritti civili debbano essere la priorità"
+        ]
+    },
+    {
+        "weight_pct": 2.103,
+        "represented_youth": 216953,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non ho tempo per le sciocchezze, ho un lavoro e un appartamento. Basta.",
+            "La mia città è tranquilla, non vedo motivo di preoccuparmi.",
+            "Le istituzioni fanno il loro lavoro, non vedo problemi."
+        ]
+    },
+    {
+        "weight_pct": 2.1,
+        "represented_youth": 216680,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il cambiamento climatico non è più un problema futuro, è qui. Serve azione immediata, non promesse.",
+            "La inclusione non è una scelta, è un diritto. Chi non la rispetta non merita il nostro silenzio.",
+            "Le città non devono essere luoghi di paura. Sicurezza e giustizia devono andare di pari passo."
+        ]
+    },
+    {
+        "weight_pct": 1.943,
+        "represented_youth": 200453,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il cambiamento climatico non aspetta. Le soluzioni? Dobbiamo trovarle insieme, non aspettando i partiti.",
+            "Inclusione e diritti non sono slogan. Sono la base per un futuro giusto per tutti.",
+            "La mia città è sicura, ma solo se si investe in comunità, non in promesse vuote."
+        ]
+    },
+    {
+        "weight_pct": 1.721,
+        "represented_youth": 177545,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non riesco a stare tranquillo con questo stipendio",
+            "La giustizia sociale non può aspettare",
+            "La mia città è sicura, ma non siamo tutti uguali"
+        ]
+    },
+    {
+        "weight_pct": 1.641,
+        "represented_youth": 169355,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il cambiamento climatico è una emergenza, ma dove sono le soluzioni concrete?",
+            "Inclusione e diritti non possono essere slogan: serve azione reale.",
+            "Camminare in città di notte non è più un piacere, ma un rischio."
+        ]
+    },
+    {
+        "weight_pct": 1.571,
+        "represented_youth": 162086,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "L'ambiente? Quando c'è lavoro e soldi, le priorità cambiano.",
+            "Diritti e inclusione non sono negoziabili. Chi non lo capisce?",
+            "I partiti parlano tanto, ma quando si deve agire? Mai."
+        ]
+    },
+    {
+        "weight_pct": 1.524,
+        "represented_youth": 157216,
+        "profile_description": "Un giovane italiano disoccupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Un lavoro? Non c'è tempo per le chiacchiere, serve un'opportunità reale",
+            "I diritti non si negoziano. Inclusione per tutti, non solo per pochi",
+            "La mia città è sicura, ma il mio portafoglio no. Priorità? Lavoro e dignità"
+        ]
+    },
+    {
+        "weight_pct": 1.515,
+        "represented_youth": 156310,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non so come pagare le bollette, ma non mi sento solo.",
+            "Gli altri si lamentano del lavoro, io del fatto che non tutti hanno pari opportunità.",
+            "Le istituzioni non sono perfette, ma almeno non mi sento abbandonato."
+        ]
+    },
+    {
+        "weight_pct": 1.483,
+        "represented_youth": 153007,
+        "profile_description": "Un giovane italiano disoccupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Cambiamenti climatici e lavoro? Senza lavoro non posso agire. La crisi colpisce tutti, ma chi non ha soldi soffre di più",
+            "Inclusione e diritti civili non sono lussi. Sono la base per una società giusta. Senza di loro, non c'è futuro",
+            "La mia città è sicura, ma senza lavoro non si vive. Le istituzioni devono fare di più per chi è in difficoltà"
+        ]
+    },
+    {
+        "weight_pct": 1.433,
+        "represented_youth": 147819,
+        "profile_description": "Un giovane italiano disoccupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Cercare lavoro è un circo, ma non trovi mai niente che ti paghi",
+            "Il prezzo del affitto sale, mentre i soldi non arrivano mai",
+            "L'ambiente? Pensa a questo quando hai un lavoro stabile"
+        ]
+    },
+    {
+        "weight_pct": 1.411,
+        "represented_youth": 145612,
+        "profile_description": "Un giovane italiano disoccupato. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il cambiamento climatico non aspetta. Serve coraggio, non promesse.",
+            "Un lavoro verde non è un lusso. È la soluzione per tutti.",
+            "Dignità e diritti non sono negoziabili. Mai."
+        ]
+    },
+    {
+        "weight_pct": 1.411,
+        "represented_youth": 145578,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il governo parla di clima, ma io pago l'affitto. Dove sono i soldi per le rinnovabili?",
+            "Lavoro tre mesi e non so se pago le bollette. La crisi non finisce mai.",
+            "I diritti civili? Quando si risolve l'occupazione, forse ci pensiamo."
+        ]
+    },
+    {
+        "weight_pct": 1.395,
+        "represented_youth": 143937,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Salary non copre spese. Serve un aumento, non discorsi su sostenibilità",
+            "Città tranquilla. Preoccupazioni: bollette, non manifestazioni",
+            "Istituzioni normali. Priorità: lavoro, non discorsi climatici"
+        ]
+    },
+    {
+        "weight_pct": 1.365,
+        "represented_youth": 140826,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il cambiamento climatico non è un problema futuri, è un'emergenza che i governi ignorano.",
+            "Non vedo soldi per me, ma i politici parlano solo di elezioni e propaganda.",
+            "Inclusione e diritti civili non sono slogan: sono il minimo per vivere con dignità."
+        ]
+    },
+    {
+        "weight_pct": 1.321,
+        "represented_youth": 136293,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Clima cambia, ma i politici parlano solo di voti. Dove sono le soluzioni concrete?",
+            "Non ho paura della città, ma il clima? Non posso permettermi di aspettare.",
+            "I partiti promettono tanto, ma quando si fa qualcosa di reale?"
+        ]
+    },
+    {
+        "weight_pct": 1.299,
+        "represented_youth": 134053,
+        "profile_description": "Un giovane italiano disoccupato. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non so se aspettare lavoro o fare qualcosa di diverso. Sto bene, ma non so dove andare",
+            "Le persone diverse non dovrebbero essere trattate male. È una priorità",
+            "La mia città è sicura, ma le istituzioni non mi ispirano fiducia. Faccio attenzione"
+        ]
+    },
+    {
+        "weight_pct": 1.251,
+        "represented_youth": 129049,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non so come pagare l'affitto, ma almeno qui non si sente in pericolo",
+            "L'ambiente? Magari domani, adesso devo pensare a trovare lavoro",
+            "I diritti civili? Non so se esistono, ma non mi toccano"
+        ]
+    },
+    {
+        "weight_pct": 1.162,
+        "represented_youth": 119878,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non capisco perché il clima non migliora, mentre io faccio la mia parte. Dove sono gli sforzi veri?",
+            "Studiare tanto non basta se non c'è lavoro. La crisi economica tocca tutti, ma chi ne parla?",
+            "Sono sicuro qui, non vedo priorità nei diritti civili. Prima i problemi concreti, poi le battaglie."
+        ]
+    },
+    {
+        "weight_pct": 1.152,
+        "represented_youth": 118847,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Mai abbastanza soldi, anche con un lavoro. Dove finisce il mio stipendio?",
+            "I diritti non si negoziano. Chi li difende quando i partiti non lo fanno?",
+            "L'ambiente? Ci penseremo quando ci sarà tempo. Adesso serve lavoro e giustizia."
+        ]
+    },
+    {
+        "weight_pct": 1.148,
+        "represented_youth": 118474,
+        "profile_description": "Un giovane italiano disoccupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non trovo lavoro e il clima peggiora. Dove siamo diretti?",
+            "La crisi economica mi preoccupa più delle dispute sui diritti.",
+            "La mia città è sicura, ma non so se il futuro lo sarà."
+        ]
+    },
+    {
+        "weight_pct": 1.137,
+        "represented_youth": 117356,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il cambiamento climatico è urgente, ma dove sono le soluzioni concrete? L'economia non può aspettare",
+            "L'inclusione è un diritto, non una promessa. Le istituzioni devono agire, non solo parlare",
+            "In città si sente insicuri. La criminalità non si risolve con più polizia, serve prevenzione e lavoro"
+        ]
+    },
+    {
+        "weight_pct": 1.092,
+        "represented_youth": 112627,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il cambiamento climatico non è un problema futuro. Oggi già sentiamo gli effetti. Serve azione reale, non promesse",
+            "Studi per anni e poi trovi lavoro? Non è giusto. La crisi economica colpisce chi non ha alternative",
+            "Voglio una città più inclusiva e sicura. I diritti non possono attendere, né la giustizia"
+        ]
+    },
+    {
+        "weight_pct": 1.08,
+        "represented_youth": 111474,
+        "profile_description": "Un giovane italiano disoccupato. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non so trovare lavoro, ma non mi preoccupo. La vita va avanti",
+            "L'ambiente? Più tardi. Ora devo pensare a me",
+            "La città è tranquilla. Le istituzioni funzionano, più o meno"
+        ]
+    },
+    {
+        "weight_pct": 1.066,
+        "represented_youth": 110006,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Non vedo il senso di preoccuparmi per l'ambiente quando sto bene economicamente.",
+            "I partiti parlano tanto, ma non vedo risultati concreti per la gente comune.",
+            "Sono sicuro qui, non vedo motivo di lottare per diritti che non mi toccano."
+        ]
+    },
+    {
+        "weight_pct": 1.001,
+        "represented_youth": 103279,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Lavoro e soldi vanno prima. L’ambiente? Più tardi.",
+            "Diritti e inclusione non sono negoziabili. Mai.",
+            "In città si è sempre più insicuri. Chi se ne frega delle promesse?"
+        ]
+    },
+    {
+        "weight_pct": 0.964,
+        "represented_youth": 99499,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il cambiamento climatico è un problema urgente. Non possiamo aspettare",
+            "La sicurezza in città è una priorità. Dovrebbero fare di più",
+            "I diritti civili sono importanti, ma non sono il mio primo problema"
+        ]
+    },
+    {
+        "weight_pct": 0.882,
+        "represented_youth": 90984,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "La giustizia sociale non può attendere. Dobbiamo agire adesso, non domani.",
+            "Camminare in città senza paura? Solo se le istituzioni fanno davvero qualcosa.",
+            "L'ambiente è importante, ma non è la mia priorità. Prima le persone."
+        ]
+    },
+    {
+        "weight_pct": 0.82,
+        "represented_youth": 84583,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Non vedo miglioramenti, lavoro tanto ma i soldi non bastano.",
+            "I partiti non risolvono niente, parlano ma non agiscono.",
+            "La sicurezza qui c'è, l'ambiente? Non è la mia priorità."
+        ]
+    },
+    {
+        "weight_pct": 0.813,
+        "represented_youth": 83933,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il cambiamento climatico non aspetta. Serve azione reale, non discorsi vuoti.",
+            "Diritti e inclusione non sono opzioni. Sono la base di una società giusta.",
+            "La criminalità urbana cresce, i partiti parlano. Dove sono le soluzioni?"
+        ]
+    },
+    {
+        "weight_pct": 0.791,
+        "represented_youth": 81621,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il cambiamento climatico è urgente, ma dove sono le soluzioni concrete?",
+            "Lavoro e stipendio non bastano, ma chi ci aiuta?",
+            "I partiti parlano, ma i problemi restano. Finisciamo con le promesse."
+        ]
+    },
+    {
+        "weight_pct": 0.771,
+        "represented_youth": 79582,
+        "profile_description": "Un giovane italiano disoccupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non trovo lavoro, ma il clima cambia. Dove finiamo?",
+            "I diritti non si negano. La città deve essere per tutti.",
+            "Per strada mi sento in pericolo. Chi protegge i cittadini?"
+        ]
+    },
+    {
+        "weight_pct": 0.75,
+        "represented_youth": 77418,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non trovo lavoro e i prezzi salgono. Dove finisce il mio futuro?",
+            "Diritti e inclusione non sono lussi. Sono diritti umani.",
+            "In città si sente sempre più insicuri. Chi ci protegge?"
+        ]
+    },
+    {
+        "weight_pct": 0.747,
+        "represented_youth": 77126,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il tempo è finito, serve azione reale, non retorica",
+            "Diritti e inclusione non sono slogan, sono diritti concreti per tutti",
+            "Partiti? Parole vuote. Bisogna agire fuori dal sistema"
+        ]
+    },
+    {
+        "weight_pct": 0.735,
+        "represented_youth": 75807,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il cambiamento climatico è un problema reale, ma non so dove iniziare a cambiare le cose.",
+            "Camminare per strada di notte mi dà fastidio, sento troppi occhi addosso.",
+            "Sono contento del mio lavoro, ma non ho tempo per le sciocchezze del greenwashing."
+        ]
+    },
+    {
+        "weight_pct": 0.707,
+        "represented_youth": 72937,
+        "profile_description": "Un giovane italiano disoccupato. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Dov'è la soluzione per il clima? Non posso aspettare che i miei figli risolvano tutto",
+            "Sono disoccupato, ma non sono in crisi. C'è troppa burocrazia per trovare lavoro",
+            "I diritti civili vanno bene, ma il clima è un problema più urgente"
+        ]
+    },
+    {
+        "weight_pct": 0.687,
+        "represented_youth": 70884,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "La crisi climatica non è solo un problema ambientale, ma anche economico. Dobbiamo investire in energie rinnovabili per creare posti di lavoro veri",
+            "Inclusione non è un optional. È la base per un futuro giusto. I diritti civili non possono aspettare",
+            "I partiti parlano tanto, ma quando si tratta di azioni concrete? Siamo stanchi di promesse vuote"
+        ]
+    },
+    {
+        "weight_pct": 0.674,
+        "represented_youth": 69572,
+        "profile_description": "Un giovane italiano disoccupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Non trovo lavoro, ma i partiti non fanno nulla per chi è in difficoltà. Dove sono i soldi?",
+            "I diritti devono essere garantiti a tutti, non solo a chi ha voce in capitolo.",
+            "La mia città è sicura, ma non vedo soluzioni per chi vive in povertà."
+        ]
+    },
+    {
+        "weight_pct": 0.673,
+        "represented_youth": 69428,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non riesco a stare tranquillo con l'aumento dei prezzi, ma non so dove rivolgermi",
+            "I diritti devono essere garantiti per tutti, non solo per alcuni",
+            "Camminare per strada mi fa paura, ma non so come cambiarlo"
+        ]
+    },
+    {
+        "weight_pct": 0.671,
+        "represented_youth": 69207,
+        "profile_description": "Un giovane italiano disoccupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Cercare lavoro da anni, ma nessun'offerta. La crisi non finisce mai",
+            "L'ambiente? Quando si è in crisi, i soldi vanno prima",
+            "I partiti parlano, ma non fanno niente. Sono tutti uguali"
+        ]
+    },
+    {
+        "weight_pct": 0.666,
+        "represented_youth": 68756,
+        "profile_description": "Un giovane italiano disoccupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Non ho lavoro, ma il clima non aspetta. Dove sono i soldi per le soluzioni reali?",
+            "I partiti parlano, ma i problemi restano. Chi ci rappresenta veramente?",
+            "Diritti e inclusione non sono slogan. Sono la base per un futuro giusto."
+        ]
+    },
+    {
+        "weight_pct": 0.646,
+        "represented_youth": 66697,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il riscaldamento globale è un problema, ma dove sono i fondi per risolverlo?",
+            "Camminare per strada di notte mi fa paura, ma nessuno sembra ascoltare.",
+            "Non ho lavoro stabile, e il futuro sembra sempre più incerto."
+        ]
+    },
+    {
+        "weight_pct": 0.646,
+        "represented_youth": 66638,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il cambiamento climatico è urgente, ma senza lavoro non si va avanti",
+            "I diritti civili non possono aspettare, l'inclusione è un diritto, non un privilegio",
+            "La criminalità cresce, i partiti parlano ma non agiscono. Dove siamo finiti?"
+        ]
+    },
+    {
+        "weight_pct": 0.643,
+        "represented_youth": 66341,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "La parità non è un lusso, è un diritto. Puntiamo lì, non sui discorsi vuoti",
+            "I partiti parlano, ma fanno poco. La gente non si illude più",
+            "Sono tranquillo qui, non ho fretta. L'ambiente? Poi vediamo"
+        ]
+    },
+    {
+        "weight_pct": 0.611,
+        "represented_youth": 63013,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Non vedo prospettive, lavoro part-time e debiti mi schiacciano.",
+            "Diritti e inclusione non sono opzioni, sono diritti umani fondamentali.",
+            "I partiti parlano di tutto, ma non risolvono niente."
+        ]
+    },
+    {
+        "weight_pct": 0.599,
+        "represented_youth": 61820,
+        "profile_description": "Un giovane italiano occupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il governo parla di clima, ma i soldi li spende altrove",
+            "Mentre i prezzi salgono, i posti di lavoro si fanno sempre più rari",
+            "In città si sente sempre più insicuri, ma chi ci fa qualcosa?"
+        ]
+    },
+    {
+        "weight_pct": 0.575,
+        "represented_youth": 59381,
+        "profile_description": "Un giovane italiano disoccupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il clima è urgente, ma dove sono i posti di lavoro?",
+            "La disoccupazione non finisce mai, e i partiti non fanno niente.",
+            "I partiti parlano tanto, ma non risolvono niente."
+        ]
+    },
+    {
+        "weight_pct": 0.572,
+        "represented_youth": 59050,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non so come pagare l'affitto, ma non ho tempo per preoccuparmi",
+            "Camminare di notte mi dà fastidio, ma non so dove andare",
+            "I diritti civili? Non vedo come cambierebbero la mia vita"
+        ]
+    },
+    {
+        "weight_pct": 0.556,
+        "represented_youth": 57366,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Non vedo miglioramenti: lavoro, ma i soldi non bastano.",
+            "I diritti non si negoziano, l'inclusione è un dovere.",
+            "In città non mi sento al sicuro, i partiti non risolvono niente."
+        ]
+    },
+    {
+        "weight_pct": 0.549,
+        "represented_youth": 56650,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il cambiamento climatico non è un problema futuro, è qui. Bisogna agire adesso, non aspettare",
+            "Non trovo lavoro e i salari non bastano. I partiti non risolvono niente, sono tutti uguali",
+            "I diritti civili non possono attendere. In città mi sento insicuro, la criminalità è un problema reale"
+        ]
+    },
+    {
+        "weight_pct": 0.543,
+        "represented_youth": 55998,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non capisco l'agitazione per l'ambiente: non vedo problemi concreti nella mia vita",
+            "Camminare da solo di notte mi fa paura: le città non sono più sicure come un tempo",
+            "Le istituzioni fanno poco per risolvere i problemi reali, ma non è che non si provi"
+        ]
+    },
+    {
+        "weight_pct": 0.541,
+        "represented_youth": 55793,
+        "profile_description": "Un giovane italiano studente o inattivo. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Non mi preoccupa l'ambiente: ho soldi e non vedo problemi concreti.",
+            "I partiti non cambiano niente, tanto vale ignorarli.",
+            "La mia città è tranquilla, non vedo motivo di agitarmi."
+        ]
+    },
+    {
+        "weight_pct": 0.537,
+        "represented_youth": 55393,
+        "profile_description": "Un giovane italiano disoccupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Non trovo lavoro, ma non mi preoccupo per il clima.",
+            "La giustizia sociale va velocizzata, non si aspetta.",
+            "In centro mi sento in pericolo, le strade non sono sicure."
+        ]
+    },
+    {
+        "weight_pct": 0.536,
+        "represented_youth": 55344,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Nonostante lavoro, non basta. Vorrei più soldi per vivere tranquillo",
+            "In città mi sento insicuro. La criminalità è un problema reale",
+            "Non ho tempo per l'ambiente. Ora devo pensare a pagare l'affitto"
+        ]
+    },
+    {
+        "weight_pct": 0.518,
+        "represented_youth": 53433,
+        "profile_description": "Un giovane italiano disoccupato. Non reputa l'ambiente una priorità urgente. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Cerco lavoro da mesi, ma non trovo niente. La situazione è dura.",
+            "In città si sente sempre più insicuri. Non si sa mai chi c'è dietro l'angolo.",
+            "L'ambiente? Pensa a trovare un lavoro prima. Non ci sono risorse per altro."
+        ]
+    },
+    {
+        "weight_pct": 0.506,
+        "represented_youth": 52206,
+        "profile_description": "Un giovane italiano disoccupato. È fortemente preoccupato per il cambiamento climatico. Vive una situazione di insoddisfazione economica. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Il lavoro non c'è, ma il riscaldamento globale sì. Dove finiamo?",
+            "In città si sente sempre più in pericolo. Chi ci protegge?",
+            "La crisi economica non mi preoccupa quanto il clima. Ma dove siamo?"
+        ]
+    },
+    {
+        "weight_pct": 0.492,
+        "represented_youth": 50791,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Si sente sicuro nella sua città. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il clima è un problema urgente, ma i partiti non fanno nulla. Dove sono i cambiamenti concreti?",
+            "Sono sereno economicamente e nella mia città. Non vedo motivo di preoccuparmi per i diritti civili.",
+            "I partiti non risolvono nulla. Preferisco agire da solo piuttosto che fidarmi di loro."
+        ]
+    },
+    {
+        "weight_pct": 0.486,
+        "represented_youth": 50153,
+        "profile_description": "Un giovane italiano studente o inattivo. È fortemente preoccupato per il cambiamento climatico. È economicamente sereno. Ritiene i diritti civili e l'inclusione una priorità assoluta. Teme la criminalità urbana e si sente insicuro in strada. Prova totale sfiducia verso i partiti politici.",
+        "generated_statements": [
+            "Il cambiamento climatico è urgente, ma i governi non agiscono. Dove sono le soluzioni concrete?",
+            "Diritti civili e inclusione non sono slogan. Devono diventare realtà, non promesse vuote.",
+            "La città mi spaventa. I partiti parlano, ma niente cambia. Dove sono i risultati?"
+        ]
+    },
+    {
+        "weight_pct": 0.476,
+        "represented_youth": 49152,
+        "profile_description": "Un giovane italiano occupato. Non reputa l'ambiente una priorità urgente. È economicamente sereno. Non ritiene i diritti civili una priorità urgente. Teme la criminalità urbana e si sente insicuro in strada. Ha un livello normale di fiducia nelle istituzioni.",
+        "generated_statements": [
+            "Mentre altri parlano di clima, io penso a come mantenere il mio lavoro",
+            "In città si sente sempre più in pericolo, ma chi ci protegge davvero?",
+            "I miei diritti? Mi preoccupano di più le strade e il lavoro"
+        ]
+    }
+]

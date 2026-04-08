@@ -1,0 +1,83 @@
+Questo è un progetto di **Human Data Science** eccellente: unisce l'analisi computazionale (NLP, Computer Vision) con l'impatto sociologico (rappresentanza politica).
+
+Il problema principale in questi paper è il **"Semantic Gap"**: come confrontare i dati strutturati/statistici (ISTAT/Eurobarometro) con i dati non strutturati dei social (Video/TikTok/Reels).
+
+Ecco un piano di implementazione scientificamente rigoroso, tecnicamente avanzato e basato esclusivamente su modelli **Open Source** eseguibili localmente.
+
+---
+
+## 1. Architettura Concettuale: "The Representation Space"
+
+L'approccio scientifico migliore non è una semplice keyword matching, ma la creazione di un **Joint Embedding Space**. Proietteremo sia le preoccupazioni dei giovani (ISTAT) che i contenuti dei politici nello stesso spazio vettoriale per misurarne la divergenza.
+
+### Il Modello di Misura: *Earth Mover's Distance (EMD)* o *Jensen-Shannon Divergence*.
+Invece di una semplice similarità coseno media, useremo la distanza tra **distribuzioni di probabilità di temi**. Se ISTAT dice che il 40% dei giovani è preoccupato per il lavoro, e il politico dedica solo il 5% dei contenuti al lavoro, la "distanza" aumenta.
+
+---
+
+## 2. Implementation Plan Tecnico
+
+### Fase A: Costruzione della Ground Truth (Youth Needs)
+I dati ISTAT (AVQ) e Eurobarometro sono spesso in formato tabellare o report PDF.
+1.  **Estrazione Topic:** Identifica le macro-aree ISTAT (es: *Lavoro, Ambiente, Istruzione, Salute, Partecipazione Politica*).
+2.  **Ponderazione (Weighting):** Per la fascia 18-24 e 25-34, estrai le frequenze relative di "preoccupazione" o "priorità".
+3.  **Sintesi Semantica:** Usa un LLM locale (**Llama 3.1 8B** o **Mistral Nemo**) per generare "Statement Rappresentativi" per ogni categoria ISTAT, basati sui dati reali. Questi saranno i tuoi anchor point nello spazio vettoriale.
+
+### Fase B: Multimodal Scraping & Processing (The CS Core)
+Per i politici (es. Meloni, Schlein, Salvini, Conte su TikTok/Instagram):
+
+1.  **Scraping:** Usa `yt-dlp` (funziona per TikTok/Reels) o librerie come `instaloader`.
+2.  **Speech-to-Text (Audio):** Usa **Faster-Whisper** (implementazione ottimizzata di OpenAI Whisper). È il top per l'italiano locale.
+3.  **Visual Content Analysis (Video/Immagini):**
+    * **OCR:** Per i testi sovrimpressi nei video (molto comuni nei contenuti politici), usa **PaddleOCR** (molto leggero e preciso).
+    * **Image/Frame Captioning:** Per capire il contesto visuale (es. "politico in un mercato" vs "politico in ufficio"), usa **Florence-2** (di Microsoft, open source, piccolissimo e potentissimo per il tagging).
+4.  **Data Fusion:** Unisci trascrizione audio, testo OCR e descrizioni visuali in un unico documento testuale per ogni post.
+
+### Fase C: Pipeline di NLP & Embedding
+Dobbiamo trasformare i testi in numeri.
+1.  **Modello di Embedding:** Usa **BGE-M3**. È attualmente il miglior modello open source per il retrieval multilingue (supporta benissimo l'italiano) e gestisce input lunghi.
+2.  **Topic Modeling (Zero-Shot):** Non usare LDA (vecchio). Usa **BERTopic** o una classificazione Zero-Shot basata su **Bart-Italian**.
+    * Classifica ogni post dei politici nelle categorie ISTAT identificate nella Fase A.
+
+---
+
+## 3. Lo Stack Tecnologico (100% Locale/Open Source)
+
+| Task | Strumento / Modello | Perché? |
+| :--- | :--- | :--- |
+| **Inference Engine** | **Ollama** o **vLLM** | Per far girare gli LLM in locale con facilità. |
+| **Trascrizione** | **Faster-Whisper (Large-v3)** | Stato dell'arte per l'italiano, correzione errori ottima. |
+| **Computer Vision** | **Florence-2-base** | Estremamente veloce su GPU consumer, fa OCR e captioning. |
+| **Embeddings** | **BAAI/bge-m3** | Supporta "dense", "lexical" e "multi-vector" retrieval. |
+| **Vector DB** | **ChromaDB** o **Qdrant** | Semplici da settare in locale per gestire i vettori. |
+| **Analisi Dati** | **Python (Pandas, Scipy)** | Per calcolare le divergenze statistiche tra distribuzioni. |
+
+---
+
+## 4. Metodologia di Misura (Il "Risultato Scientifico")
+
+Per rendere il paper solido, devi calcolare l'**Agenda Alignment Score**.
+
+1.  **Vettore Politico ($V_p$):** Una distribuzione di probabilità dei temi trattati dal politico $p$ basata sulla frequenza dei post classificati.
+2.  **Vettore Giovani ($V_y$):** Una distribuzione di probabilità delle priorità emerse dai dati ISTAT/Eurobarometro.
+3.  **Distanza di Jensen-Shannon (JSD):**
+    $$JSD(V_p || V_y)$$
+    La JSD è perfetta perché è simmetrica e va da 0 (allineamento totale) a 1 (distanza totale).
+
+### Analisi Qualitativa (Il "Human" in Data Science)
+Non fermarti al numero. Usa il tuo LLM locale per fare **Sentiment Analysis** e **Complexity Analysis** (Indice di Gulpease per la leggibilità del parlato).
+* *Ipotesi:* "Il politico X parla dei temi giusti (distanza tematica bassa) ma usa un linguaggio troppo complesso o un tono aggressivo (distanza comunicativa alta)".
+
+---
+
+## 5. Workflow Suggerito
+
+1.  **Settimana 1:** Download dati ISTAT e creazione del "Profilo dei bisogni dei giovani" (definizione dei macro-temi).
+2.  **Settimana 2:** Sviluppo dello scraper e della pipeline di preprocessing (Whisper + Florence-2).
+3.  **Settimana 3:** Embedding e classificazione dei post dei politici.
+4.  **Settimana 4:** Calcolo delle distanze statistiche, generazione dei grafici (Radar Charts per confrontare i temi) e stesura del paper.
+
+**Consiglio da peer:** Focalizzatevi su un numero ristretto di politici (es. i leader dei primi 5 partiti) ma analizzate un arco temporale significativo (ultimi 6 mesi). Questo rende i dati più stabili e il confronto con l'indagine annuale ISTAT più coerente.
+
+Cosa ne pensi di questo approccio basato sulle distribuzioni di probabilità? Preferiresti un'analisi più focalizzata sul "sentimento" o sulla "tematica"?
+

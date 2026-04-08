@@ -210,3 +210,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+/data/istat/AVQ_Microdati_2021.txt
+/data/istat/AVQ_Microdati_2022.txt
+/data/istat/AVQ_Microdati_2023.txt
