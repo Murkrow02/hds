@@ -11,7 +11,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- CONFIGURATION ---
-ENV_TARGET_PROFILE = "matteosalviniofficial"
 OCR_LANG = "ita+eng"
 
 # Faster-Whisper Configuration (Apple Silicon Optimized)
@@ -23,20 +22,14 @@ ENABLE_TRANSCRIPTION = True
 
 # --- Parsing Argomenti ---
 parser = argparse.ArgumentParser(description="Instagram Media Transcriber & OCR")
-parser.add_argument("-t", "--target-profile", type=str, help="Profilo Instagram da elaborare")
+parser.add_argument("profile", type=str, help="Profilo Instagram da elaborare (obbligatorio)")
 args = parser.parse_args()
 
-if args.target_profile:
-    TARGET_PROFILE = args.target_profile
-    print(f"[CONFIG] Target profile impostato da ARGOMENTO: {TARGET_PROFILE}")
-elif ENV_TARGET_PROFILE:
-    TARGET_PROFILE = ENV_TARGET_PROFILE
-    print(f"[CONFIG] Target profile letto da hardcoded value: {TARGET_PROFILE}")
-else:
-    print("[ERRORE] Nessun target profile fornito né tramite argomento né nel file .env")
-    exit(1)
+TARGET_PROFILE = args.profile
+print(f"[CONFIG] Target profile impostato da argomenti: {TARGET_PROFILE}")
 
-DATASET_DIR = os.path.join("dataset", TARGET_PROFILE)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATASET_DIR = os.path.join(SCRIPT_DIR, "..", "..", "data", "content", TARGET_PROFILE)
 
 tesseract_path = shutil.which("tesseract")
 if tesseract_path:
@@ -81,20 +74,60 @@ def transcribe_video(video_path, folder_path, model):
         
         return " ".join(text_parts).strip()
     except Exception as e:
-        print(f"    ❌ ERROR transcribing {os.path.basename(video_path)}: {e}")
+        print(f"    [ERRORE] Trascrizione video {os.path.basename(video_path)}: {e}")
         return ""
     finally:
         if os.path.exists(audio_path): 
             os.remove(audio_path)
 
+def combine_json_files(profile_name, dataset_dir):
+    all_posts_data = []
+    subdirs = sorted([d for d in os.listdir(dataset_dir) if os.path.isdir(os.path.join(dataset_dir, d))])
+    
+    print(f"\n[INFO] Creazione file JSON aggregato per {profile_name}...")
+
+    for subdir in subdirs:
+        if subdir.startswith("_temp"):
+            continue
+            
+        json_file_path = os.path.join(dataset_dir, subdir, f"{subdir}.json")
+        if os.path.exists(json_file_path):
+            try:
+                with open(json_file_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    all_posts_data.append(data)
+            except Exception as e:
+                print(f"[ERRORE] Lettura di {json_file_path}: {e}")
+        else:
+            # Fallback per consistenza
+            for file in os.listdir(os.path.join(dataset_dir, subdir)):
+                if file.endswith(".json") and file != "info.json":
+                    try:
+                        with open(os.path.join(dataset_dir, subdir, file), "r", encoding="utf-8") as f:
+                            data = json.load(f)
+                            all_posts_data.append(data)
+                            break
+                    except Exception:
+                        continue
+
+    if all_posts_data:
+        output_file = os.path.join(dataset_dir, f"{profile_name}.json")
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(all_posts_data, f, indent=4, ensure_ascii=False)
+        print(f"[INFO] Creato file unico: {output_file}")
+        print(f"[INFO] Totale post inclusi: {len(all_posts_data)}")
+    else:
+        print("[AVVISO] Nessun JSON trovato da combinare.")
+
+
 # --- Main ---
 
 def main():
     if not os.path.exists(DATASET_DIR):
-        print(f"Errore: La cartella {DATASET_DIR} non esiste.")
+        print(f"[ERRORE] La cartella {DATASET_DIR} non esiste.")
         return
 
-    print(f"--- Initializing Faster-Whisper {MODEL_SIZE} ---")
+    print(f"[INFO] Inizializzazione Faster-Whisper {MODEL_SIZE}...")
     whisper_model = WhisperModel(
         MODEL_SIZE, 
         device=DEVICE, 
@@ -105,7 +138,7 @@ def main():
 
     folders = sorted([d for d in os.listdir(DATASET_DIR) if os.path.isdir(os.path.join(DATASET_DIR, d)) and not d.startswith("_temp")])
     
-    print(f"Inizio elaborazione: {len(folders)} cartelle trovate per {TARGET_PROFILE}")
+    print(f"[INFO] Inizio elaborazione: {len(folders)} cartelle trovate per {TARGET_PROFILE}\n")
     
     count = 0
     for folder in folders:
@@ -122,7 +155,7 @@ def main():
         with open(info_file, "r", encoding="utf-8") as f:
             post_info = json.load(f)
 
-        print(f"[{count+1}] Elaborazione: {folder}")
+        print(f"[{count+1:>2}] Elaborazione: {folder}")
         
         media_files = [f for f in os.listdir(folder_path) if f.lower().endswith(('.jpg', '.jpeg', '.png', '.mp4', '.webp'))]
         extracted_text_list = []
@@ -136,7 +169,7 @@ def main():
                 if text: extracted_text_list.append(text)
                 
             if ENABLE_TRANSCRIPTION and ext == ".mp4":
-                print(f"    -> ✍️ Transcribing video...")
+                print(f"    -> Trascrizione video...")
                 text = transcribe_video(media_path, folder_path, whisper_model)
                 if text: extracted_text_list.append(text)
 
@@ -154,7 +187,9 @@ def main():
         
         count += 1
 
-    print(f"\n🎉 Completato. {count} nuove cartelle elaborate.")
+    print(f"\n[INFO] Completato. {count} nuove cartelle elaborate.")
+    
+    combine_json_files(TARGET_PROFILE, DATASET_DIR)
 
 if __name__ == "__main__":
     main()
