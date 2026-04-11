@@ -1,9 +1,3 @@
 instaloader
-Pillow
-pytesseract
-openai-whisper
-torch
 requests
 python-dotenv
-ffmpeg-python
-faster_whisper

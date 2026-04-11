@@ -214,7 +214,10 @@ __marimo__/
 /data/istat/AVQ_Microdati_2022.txt
 /data/istat/AVQ_Microdati_2023.txt
 
-# Data
-tools/dataset/**/**.jpg
-tools/dataset/**/**.mp4
-tools/dataset/**/info.json
+# Instagram session
+tools/content_scraping/session.txt
+
+# Scraped data
+data/content/**/**.jpg
+data/content/**/**.mp4
+data/content/**/info.json

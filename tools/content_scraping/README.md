@@ -1,10 +1,8 @@
 # Instagram Scraper
 
-Scarica i post piu' recenti di un profilo Instagram in un intervallo di giorni configurabile. Per ogni post salva i media e i metadata (likes, commenti, caption) in JSON. Opzionalmente esegue OCR sulle immagini e trascrizione audio sui video.
+Scarica i post di un profilo Instagram in un intervallo di date configurabile. Per ogni post salva i file media (immagini, video) e un file `info.json` con caption e tipo di contenuto.
 
-Sono inclusi due script:
-- `scraper_plus.py` — download completo con OCR (pytesseract) e trascrizione audio (Whisper)
-- `scraper.py` — solo download e metadata in JSON
+I dati scaricati vengono salvati in `data/content/<profilo>/` con una cartella per ogni post, nel formato `<data>_<numero>`.
 
 ---
 
@@ -13,74 +11,90 @@ Sono inclusi due script:
 ### 1. Creare e attivare la virtual environment
 
 Linux/macOS:
-```
+```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
 Windows:
-```
+```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
 ### 2. Installare le dipendenze Python
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-### 3. Dipendenze di sistema
+### 3. File `.env`
 
-ffmpeg e tesseract non si installano via pip, vanno installati separatamente.
+Crea un file `.env` nella root del progetto con i cookie della sessione Instagram autenticata.
 
-Linux:
-```
-sudo apt install ffmpeg tesseract-ocr tesseract-ocr-ita
-```
+Recuperali da Chrome: `F12 > Application > Cookies > instagram.com`
 
-macOS:
-```
-brew install ffmpeg tesseract tesseract-lang
-```
-
-### 4. File .env
-
-Crea un file `.env` nella root del progetto. Questi sono i cookie della sessione Instagram autenticata, recuperabili da Chrome in: F12 > Application > Cookies > instagram.com
-
-```
-SESSION_ID=
-CSRF_TOKEN=
-DS_USER_ID=
-MID=
+```env
+SESSION_ID=...
+CSRF_TOKEN=...
+DS_USER_ID=...
+MID=...
 ```
 
-### 5. Generare session.txt
-
-```
-python session.py
-```
-
-Verifica il login e salva la sessione in `session.txt`. Va rigenerato quando la sessione scade.
-
-### 6. Configurare i profili
-
-In cima a `scraper.py` o `scraper_plus.py`:
-
-```python
-USERNAME = "il_tuo_username"
-TARGET_PROFILE = "profilo_da_scrapare"
-DAYS = 7
-```
+> La sessione viene generata automaticamente al primo avvio dello scraper e salvata in `session.txt`. Quando scade, viene rigenerata automaticamente dai cookie nel `.env`.
 
 ---
 
 ## Utilizzo
 
+```bash
+python scraper.py <profilo> [--start YYYY-MM-DD] [--end YYYY-MM-DD]
 ```
-python scraper.py
+
+### Argomenti
+
+| Argomento | Tipo | Obbligatorio | Default | Descrizione |
+|---|---|---|---|---|
+| `profilo` | posizionale | ✅ | — | Username del profilo Instagram |
+| `--start`, `-s` | flag | ❌ | 7 giorni fa | Data di inizio (formato `YYYY-MM-DD`) |
+| `--end`, `-e` | flag | ❌ | oggi | Data di fine (formato `YYYY-MM-DD`) |
+
+### Esempi
+
+```bash
+# Ultimi 7 giorni (default)
+python scraper.py matteosalviniofficial
+
+# Da una data specifica a oggi
+python scraper.py matteosalviniofficial --start 2026-04-01
+
+# Intervallo specifico
+python scraper.py matteosalviniofficial --start 2026-04-01 --end 2026-04-11
 ```
-oppure
+
+---
+
+## Struttura output
+
 ```
-python scraper_plus.py
+data/content/<profilo>/
+├── 2026-04-09_001/
+│   ├── 2026-04-09_001_1.jpg
+│   ├── 2026-04-09_001_2.jpg
+│   └── info.json
+├── 2026-04-10_001/
+│   ├── 2026-04-10_001_1.mp4
+│   └── info.json
+└── 2026-04-10_002/
+    ├── 2026-04-10_002_1.jpg
+    └── info.json
+```
+
+Ogni `info.json` contiene:
+```json
+{
+    "folder_id": "2026-04-10_001",
+    "caption": "Testo della caption del post...",
+    "type": "video"
+}
 ```
