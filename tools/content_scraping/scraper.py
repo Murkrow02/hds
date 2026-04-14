@@ -192,6 +192,7 @@ def main():
         filename_pattern="{shortcode}_{filename}",
         sleep=True,
         quiet=True,
+        download_video_thumbnails=False
     )
 
     load_or_create_session(L)

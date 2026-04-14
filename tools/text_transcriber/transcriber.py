@@ -165,6 +165,7 @@ def main():
             ext = os.path.splitext(media_file)[1].lower()
             
             if ENABLE_OCR and ext in [".jpg", ".jpeg", ".png", ".webp"]:
+                print(f"    -> Trascrizione immagine...")
                 text = run_ocr_on_image(media_path)
                 if text: extracted_text_list.append(text)
                 
