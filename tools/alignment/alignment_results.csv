@@ -1,0 +1,4 @@
+politician,alignment_score,pol_clima,pol_economia,pol_diritti,pol_sicurezza,pol_sfiducia,pol_immigrazione,pol__propaganda,youth_clima,youth_economia,youth_diritti,youth_sicurezza,youth_sfiducia,youth_immigrazione,youth__propaganda
+matteosalviniofficial,0.9771,0.1627,0.1576,0.2405,0.0958,0.2081,0.1353,0.3045,0.2026,0.1484,0.3564,0.0785,0.0771,0.1369,0.0
+ellyesse,0.9681,0.1771,0.1603,0.2258,0.0736,0.2473,0.1159,0.5635,0.2026,0.1484,0.3564,0.0785,0.0771,0.1369,0.0
+giuseppeconte_ufficiale,0.9651,0.1638,0.1603,0.2298,0.0769,0.2596,0.1096,0.5712,0.2026,0.1484,0.3564,0.0785,0.0771,0.1369,0.0

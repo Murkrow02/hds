@@ -1,0 +1,72 @@
+{
+    "categories": [
+        "clima",
+        "economia",
+        "diritti",
+        "sicurezza",
+        "sfiducia",
+        "immigrazione",
+        "_propaganda"
+    ],
+    "meaningful_categories": [
+        "clima",
+        "economia",
+        "diritti",
+        "sicurezza",
+        "sfiducia",
+        "immigrazione"
+    ],
+    "youth_distribution": {
+        "clima": 0.2978,
+        "economia": 0.0686,
+        "diritti": 0.4664,
+        "sicurezza": 0.0,
+        "sfiducia": 0.0,
+        "immigrazione": 0.1671,
+        "_propaganda": 0.0
+    },
+    "politicians": [
+        {
+            "politician": "matteosalviniofficial",
+            "alignment_score": 0.8687,
+            "distribution": {
+                "clima": 0.172,
+                "economia": 0.1687,
+                "diritti": 0.2443,
+                "sicurezza": 0.0838,
+                "sfiducia": 0.1869,
+                "immigrazione": 0.1443,
+                "_propaganda": 0.2949
+            },
+            "noise_score": 0.2949
+        },
+        {
+            "politician": "ellyesse",
+            "alignment_score": 0.8466,
+            "distribution": {
+                "clima": 0.1904,
+                "economia": 0.1549,
+                "diritti": 0.2205,
+                "sicurezza": 0.0807,
+                "sfiducia": 0.2457,
+                "immigrazione": 0.1077,
+                "_propaganda": 0.5288
+            },
+            "noise_score": 0.5288
+        },
+        {
+            "politician": "giuseppeconte_ufficiale",
+            "alignment_score": 0.8172,
+            "distribution": {
+                "clima": 0.1413,
+                "economia": 0.1578,
+                "diritti": 0.2149,
+                "sicurezza": 0.1042,
+                "sfiducia": 0.2771,
+                "immigrazione": 0.1046,
+                "_propaganda": 0.6052
+            },
+            "noise_score": 0.6052
+        }
+    ]
+}
