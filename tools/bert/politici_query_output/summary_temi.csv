@@ -1,0 +1,10 @@
+tema,forti,medi,max_score,p95_score,media_score,query
+giustizia,4,2,0.669,0.556,0.318,giustizia magistrati tribunali processi sentenze carcere riforma legge
+ambiente,1,0,0.597,0.383,0.195,ambiente clima energia rinnovabili inquinamento transizione ecologica sostenibilita
+europa,1,5,0.588,0.464,0.35,europa unione europea bruxelles euro commissione parlamento europeo trattati
+lavoro,0,2,0.497,0.331,0.197,lavoro occupazione disoccupazione sindacati contratti precari cassa integrazione
+sicurezza,0,3,0.469,0.452,0.319,sicurezza criminalita polizia carabinieri legalita ordine pubblico violenza
+economia,0,1,0.461,0.237,0.098,economia lavoro salari inflazione imprese tasse crescita pensioni
+immigrazione,0,1,0.456,0.424,0.31,immigrazione confini sbarchi integrazione accoglienza clandestini sicurezza
+sanita,0,0,0.275,0.23,0.109,sanita ospedali medici infermieri pronto soccorso cure liste attesa ssn
+scuola,0,0,0.267,0.241,0.141,scuola insegnanti studenti universita istruzione classi formazione educazione

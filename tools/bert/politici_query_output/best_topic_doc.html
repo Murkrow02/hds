@@ -1,0 +1,558 @@
+
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Best topic per documento</title>
+        
+    <style>
+        body { font-family: Arial, sans-serif; margin: 24px; }
+        h1 { margin-bottom: 20px; }
+        table { border-collapse: collapse; width: 100%; font-size: 14px; }
+        th, td { border: 1px solid #d0d0d0; padding: 8px; text-align: left; vertical-align: top; }
+        th { background: #f5f5f5; position: sticky; top: 0; }
+        tr:nth-child(even) { background: #fafafa; }
+    </style>
+    
+    </head>
+    <body>
+        <h1>Best topic per documento</h1>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>doc_id</th>
+      <th>folder_id</th>
+      <th>caption</th>
+      <th>best_tema</th>
+      <th>best_score</th>
+      <th>forza</th>
+      <th>estratto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>23</td>
+      <td>2026-03-20_001</td>
+      <td>Votiamo NO a una riforma che non migliora la giustizia per i cittadini, ma indebolisce l’indipendenza dei giudici che tutela tutti, soprattutto chi non ha il potere o i soldi per cavarsela comunque.\nLa giustizia si può migliorare, ma non migliora mettendo i giudici sotto il controllo del governo. \n\nVotiamo NO anche all’arroganza di un governo che ha blindato una riforma costituzionale senza accettare di modificare nemmeno una virgola. \n\nRicordate che per questo referendum non c’è quorum, OGNI VOTO PUÒ FARE LA DIFFERENZA! \n\nUn grazie a tutte e tutti coloro che si sono mobilitati per questa campagna, a tutto il Partito Democratico che si è speso in ogni territorio. \nCercate di convincere più persone possibile a votare NO, per difendere la nostra Costituzione!</td>
+      <td>giustizia</td>
+      <td>0.669</td>
+      <td>forte</td>
+      <td>Votiamo NO a una riforma che non migliora la giustizia per i cittadini, ma indebolisce l’indipendenza dei giudici che tutela tutti, soprattutto chi non ha il potere o i soldi pe...</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>2026-03-19_004</td>
+      <td>Andiamo a votare NO a una riforma sbagliata.\nIl 22 e il 23 marzo difendiamo la Costituzione.</td>
+      <td>giustizia</td>
+      <td>0.639</td>
+      <td>forte</td>
+      <td>Andiamo a votare NO a una riforma sbagliata. Il 22 e il 23 marzo difendiamo la Costituzione. Questa non è una riforma che migliora la giustizia per voi, non migliora la giustizi...</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>2026-03-12_001</td>
+      <td>La strategia energetica del governo Meloni: passare dalla dipendenza dal gas russo di Putin a quello americano di Trump. Geniale!</td>
+      <td>ambiente</td>
+      <td>0.597</td>
+      <td>forte</td>
+      <td>La strategia energetica del governo Meloni: passare dalla dipendenza dal gas russo di Putin a quello americano di Trump. Geniale! 2° DIPEDENZA DA > FONTI FOSSILI Però per smette...</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>2026-03-19_002</td>
+      <td>La destra continua a ripetere che la separazione delle carriere c’è in altri paesi europei. Quello che non dice è che in molti di quei paesi il pubblico ministero è organo del governo. È dove vogliono arrivare, e anche per questo votiamo no.</td>
+      <td>europa</td>
+      <td>0.588</td>
+      <td>forte</td>
+      <td>La destra continua a ripetere che la separazione delle carriere c’è in altri paesi europei. Quello che non dice è che in molti di quei paesi il pubblico ministero è organo del g...</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>2026-04-02_003</td>
+      <td>Stesso giorno. Stesso Ufficio di Presidenza della Camera.\nDue decisioni, due pesi e due misure.\n\nVotando a maggioranza, la destra salva Giusi Bartolozzi sul caso Almasri, alzando uno scudo processuale,\nma sanziona 32 deputati che hanno difeso i valori antifascisti della Costituzione.\n\nProteggono chi libera un torturatore ricercato dalla Corte Penale Internazionale.\nPuniscono chi difende la nostra democrazia.\n\nQuesta è la loro idea di giustizia.</td>
+      <td>giustizia</td>
+      <td>0.557</td>
+      <td>forte</td>
+      <td>Stesso giorno. Stesso Ufficio di Presidenza della Camera. Due decisioni, due pesi e due misure. Votando a maggioranza, la destra salva Giusi Bartolozzi sul caso Almasri, alzando...</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>2026-03-19_001</td>
+      <td>La mia intervista di questa sera a Cinque Minuti.</td>
+      <td>giustizia</td>
+      <td>0.556</td>
+      <td>forte</td>
+      <td>La mia intervista di questa sera a Cinque Minuti. Ce l'ha spiegato molto bene il governo quando il sottosegretario Mantovano dice che la riforma serve a riequilibrare i rapporti...</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>2026-03-25_001</td>
+      <td>Restate mobilitati, perché ne avremo bisogno per costruire l’alternativa a questo governo.\nVenite, partecipate, migliorateci.</td>
+      <td>europa</td>
+      <td>0.548</td>
+      <td>medio</td>
+      <td>Restate mobilitati, perché ne avremo bisogno per costruire l’alternativa a questo governo. Venite, partecipate, migliorateci. Ho parlato del messaggio politico che gli italiani ...</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>2026-03-15_002</td>
+      <td>Il 22 e 23 marzo difendiamo la nostra Costituzione.</td>
+      <td>giustizia</td>
+      <td>0.545</td>
+      <td>medio</td>
+      <td>Il 22 e 23 marzo difendiamo la nostra Costituzione. Referendum Ma vi pare normale che la Presidente del Consiglio di questo Paese dica che se vince il no ci saranno più stuprato...</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2026-03-12_002</td>
+      <td>Sia chiaro a Giorgia Meloni: noi non vogliamo il modello Trump. Ci teniamo stretti la nostra Costituzione.</td>
+      <td>giustizia</td>
+      <td>0.523</td>
+      <td>medio</td>
+      <td>Sia chiaro a Giorgia Meloni: noi non vogliamo il modello Trump. Ci teniamo stretti la nostra Costituzione. non ha resistito a fare un attacco ai giudici, anche da quest'Aula, Pr...</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>2026-04-10_002</td>
+      <td>Art. 1 della Costituzione: l’Italia è una Repubblica fondata sul lavoro.\nIl governo Meloni vuole una Repubblica fondata sul lavoro povero e sul lavoro precario.</td>
+      <td>lavoro</td>
+      <td>0.497</td>
+      <td>medio</td>
+      <td>Art. 1 della Costituzione: l’Italia è una Repubblica fondata sul lavoro. Il governo Meloni vuole una Repubblica fondata sul lavoro povero e sul lavoro precario. Articolo 1. L'It...</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>2026-03-18_001</td>
+      <td>In Piazza del Popolo a Roma al fianco del comitato civico per il NO al referendum del 22 e 23 marzo.\n\nGrazie a tutte e tutti per l’impegno e la passione di queste settimane di campagna! Mancano pochi giorni di campagna per convincere le persone a votare NO per difendere la Costituzione, mobilitiamoci fino all’ultimo momento utile!</td>
+      <td>europa</td>
+      <td>0.466</td>
+      <td>medio</td>
+      <td>In Piazza del Popolo a Roma al fianco del comitato civico per il NO al referendum del 22 e 23 marzo. Grazie a tutte e tutti per l’impegno e la passione di queste settimane di ca...</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>2026-03-20_003</td>
+      <td>La destra ha passato la campagna elettorale a urlare “chi sbaglia paga”. Ma per loro, a quanto pare, non vale.</td>
+      <td>sicurezza</td>
+      <td>0.466</td>
+      <td>medio</td>
+      <td>La destra ha passato la campagna elettorale a urlare “chi sbaglia paga”. Ma per loro, a quanto pare, non vale. Questi qua hanno fatto tutta la campagna elettorale a partire dall...</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>2026-03-27_001</td>
+      <td>Continuate a partecipare perché solo così potremo costruire l’alternativa a questo governo.</td>
+      <td>europa</td>
+      <td>0.464</td>
+      <td>medio</td>
+      <td>Continuate a partecipare perché solo così potremo costruire l’alternativa a questo governo. Quel voto e quei 15 milioni che hanno votato no hanno sicuramente dato un messaggio p...</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>2026-04-02_006</td>
+      <td>C’è bisogno di un governo che si occupi dei problemi degli italiani, non degli ennesimi scandali dei suoi ministri.</td>
+      <td>europa</td>
+      <td>0.464</td>
+      <td>medio</td>
+      <td>C’è bisogno di un governo che si occupi dei problemi degli italiani, non degli ennesimi scandali dei suoi ministri. Mi consenta di iniziare da una cifra questa sera perché mi ha...</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>2026-03-29_001</td>
+      <td>Il decreto fiscale infligge un colpo durissimo alle imprese che avevano scommesso su Transizione 5.0: si ritrovano con un terzo di quanto lo Stato aveva garantito. \n\nÈ una rottura brutale della fiducia tra istituzioni e mondo produttivo.\n\nQuesto governo ha cambiato le regole a partita in corso, spostato risorse e ignorato imprese e territori. Tre anni di calo della produzione industriale parlano da soli: il fallimento della destra sulle politiche industriali è conclamato.\n\nCi batteremo in Parlamento per cancellare questi tagli e ripristinare le risorse. Le imprese e i lavoratori italiani meritano uno Stato che mantenga la parola.</td>
+      <td>economia</td>
+      <td>0.461</td>
+      <td>medio</td>
+      <td>Il decreto fiscale infligge un colpo durissimo alle imprese che avevano scommesso su Transizione 5.0: si ritrovano con un terzo di quanto lo Stato aveva garantito. È una rottura...</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>2026-04-10_001</td>
+      <td>A Petacciato, in Molise, insieme al sindaco Antonio Di Pardo, dove dopo gli eventi climatici estremi dei giorni scorsi si è riattivata la frana, con un abbassamento del terreno di oltre un metro e mezzo.\n\nSiamo qui per portare vicinanza e sostegno alle comunità molisana che ha subito centinaia di milioni di euro di danni. Alle amministrazioni locali servono risorse per gli interventi, le migliori competenze tecniche, strumenti tecnologici per il monitoraggio: i cittadini aspettano e meritano risposte immediate.\n\nIl Partito Democratico è in prima linea, a ogni livello istituzionale, per fare la propria parte e sostenerli. \n\nMa non possiamo continuare a inseguire le emergenze. È urgente, lo ribadiamo, un grande piano nazionale di prevenzione e messa in sicurezza del territorio contro il dissesto idrogeologico. Non possiamo più essere un Paese che spende 4 volte dopo le emergenze ciò che invece investe in prevenzione.</td>
+      <td>immigrazione</td>
+      <td>0.456</td>
+      <td>medio</td>
+      <td>A Petacciato, in Molise, insieme al sindaco Antonio Di Pardo, dove dopo gli eventi climatici estremi dei giorni scorsi si è riattivata la frana, con un abbassamento del terreno ...</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>2026-04-02_005</td>
+      <td>La mia intervista a Realpolitik.</td>
+      <td>europa</td>
+      <td>0.444</td>
+      <td>debole</td>
+      <td>La mia intervista a Realpolitik. Sono distantissimi da tutti gli aspetti prudiginosi della vicenda ma io non posso non chiederle un commento politico anche perché c'è stato l'in...</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>2026-03-20_002</td>
+      <td>Una campagna elettorale emozionante, da sud a nord del Paese, che si chiude oggi a Milano.\n\nGrazie a tutte le nostre volontarie e tutti i nostri volontari per l’impegno e la passione. Siete la nostra forza. \n\nIl 22 e il 23 marzo VOTA NO per difendere la Costituzione.</td>
+      <td>europa</td>
+      <td>0.439</td>
+      <td>debole</td>
+      <td>Una campagna elettorale emozionante, da sud a nord del Paese, che si chiude oggi a Milano. Grazie a tutte le nostre volontarie e tutti i nostri volontari per l’impegno e la pass...</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2026-03-13_004</td>
+      <td>Ieri a Campo Santa Margherita, nel cuore di Venezia, per dire NO al referendum del 22 e 23 marzo.\n\nDa sud a nord d’Italia prosegue la mobilitazione in difesa della nostra Costituzione.\nGrazie!</td>
+      <td>europa</td>
+      <td>0.438</td>
+      <td>debole</td>
+      <td>Ieri a Campo Santa Margherita, nel cuore di Venezia, per dire NO al referendum del 22 e 23 marzo. Da sud a nord d’Italia prosegue la mobilitazione in difesa della nostra Costitu...</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>2026-03-14_002</td>
+      <td>Grazie alle migliaia di militanti del PD che oggi e domani sono nelle strade e nelle piazze di tutta Italia per la nostra mobilitazione a sostegno del NO al referendum del 22 e 23 marzo.\nForza!</td>
+      <td>europa</td>
+      <td>0.438</td>
+      <td>debole</td>
+      <td>Grazie alle migliaia di militanti del PD che oggi e domani sono nelle strade e nelle piazze di tutta Italia per la nostra mobilitazione a sostegno del NO al referendum del 22 e ...</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>2026-03-20_005</td>
+      <td>E stasera chiudiamo il tour per il NO al referendum costituzionale a MILANO! \n\nRicordate che per questo referendum non c’è quorum, OGNI VOTO PUÒ FARE LA DIFFERENZA! \n\nCercate di convincere più persone possibile a votare NO per difendere la nostra Costituzione e fermare una riforma che non migliora la giustizia per i cittadini, ma indebolisce l’indipendenza dei giudici che tutela tutti, soprattutto chi non ha il potere o i soldi per cavarsela comunque.</td>
+      <td>giustizia</td>
+      <td>0.435</td>
+      <td>debole</td>
+      <td>E stasera chiudiamo il tour per il NO al referendum costituzionale a MILANO! Ricordate che per questo referendum non c’è quorum, OGNI VOTO PUÒ FARE LA DIFFERENZA! Cercate di con...</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>2026-03-16_001</td>
+      <td>La corruzione elettorale in Italia è un reato. \n\nPer fortuna che Giorgia Meloni aveva detto che avrebbero fatto la campagna elettorale sul merito.</td>
+      <td>sicurezza</td>
+      <td>0.429</td>
+      <td>debole</td>
+      <td>La corruzione elettorale in Italia è un reato. Per fortuna che Giorgia Meloni aveva detto che avrebbero fatto la campagna elettorale sul merito. Per fortuna che Giorgia Meloni a...</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>2026-03-17_001</td>
+      <td>A Napoli insieme a Pier Luigi Bersani per sostenere le ragioni del NO al referendum di domenica e lunedì.\nE domani dalle 17 ci vediamo in Piazza del Popolo a Roma per la manifestazione nazionale del NO al referendum! \nMancano pochi giorni alla fine di questa campagna in difesa della Costituzione: ora più che mai serve l’impegno, l’energia e la passione di tutte e tutti voi.\n\nAvanti insieme, forza!</td>
+      <td>europa</td>
+      <td>0.429</td>
+      <td>debole</td>
+      <td>A Napoli insieme a Pier Luigi Bersani per sostenere le ragioni del NO al referendum di domenica e lunedì. E domani dalle 17 ci vediamo in Piazza del Popolo a Roma per la manifes...</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>2026-03-17_002</td>
+      <td>La mia intervista di questa sera al Tg1.</td>
+      <td>immigrazione</td>
+      <td>0.429</td>
+      <td>debole</td>
+      <td>La mia intervista di questa sera al Tg1. Questa guerra illegale sta già costando 17 milioni in più al giorno agli italiani solo di carburanti e 10 milioni entrano in più nelle c...</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>2026-03-15_003</td>
+      <td>Grazie Bologna!\n\nInizia l’ultima settimana della nostra campagna per il NO al referendum del 22 e 23 marzo.\nSette giorni ancora di impegno, partecipazione e mobilitazione per difendere la nostra Costituzione.\n\nForza, andiamo a vincere!</td>
+      <td>europa</td>
+      <td>0.428</td>
+      <td>debole</td>
+      <td>Grazie Bologna! Inizia l’ultima settimana della nostra campagna per il NO al referendum del 22 e 23 marzo. Sette giorni ancora di impegno, partecipazione e mobilitazione per dif...</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>2026-03-20_004</td>
+      <td>Grazie Milano!\n\nIl 22 e il 23 marzo difendiamo la Costituzione, votiamo NO.</td>
+      <td>europa</td>
+      <td>0.424</td>
+      <td>debole</td>
+      <td>Grazie Milano! Il 22 e il 23 marzo difendiamo la Costituzione, votiamo NO.</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>2026-04-05_001</td>
+      <td></td>
+      <td>immigrazione</td>
+      <td>0.423</td>
+      <td>debole</td>
+      <td>Buona Pasqua a tutte e tutti, sperando che avvicini la pace perché il mondo oggi più che mai ne ha bisogno. No alla guerra, che tacciano le armi, che si riprenda il dialogo, che...</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>2026-03-31_001</td>
+      <td></td>
+      <td>europa</td>
+      <td>0.420</td>
+      <td>debole</td>
+      <td>Partito Democratico Negare l’autorizzazione da parte dell’Italia non può essere una decisione sporadica, deve diventare una linea politica espressa con chiarezza, anche in vista...</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>2026-03-19_005</td>
+      <td>Venerdì a Milano. Vi aspetto.</td>
+      <td>europa</td>
+      <td>0.419</td>
+      <td>debole</td>
+      <td>Venerdì a Milano. Vi aspetto. Venerdì Piazza 20 marzo Sant'Agostino Ore 18.00 Milano Elly SCHLEIN VOTA NO per difendere la Costituzione</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>2026-04-09_003</td>
+      <td>Il mio intervento in Aula dopo l’informativa della presidente del Consiglio sull’azione del governo.</td>
+      <td>europa</td>
+      <td>0.419</td>
+      <td>debole</td>
+      <td>Il mio intervento in Aula dopo l’informativa della presidente del Consiglio sull’azione del governo. Presidente, il suo è stato un discorso di autoconvincimento. Lei ci sfida, m...</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>2026-03-30_001</td>
+      <td></td>
+      <td>sicurezza</td>
+      <td>0.411</td>
+      <td>debole</td>
+      <td>Appare evidente che le dimissioni di Delmastro e il tentativo di relegare a una “leggerezza” il fatto che un membro del governo fosse nella stessa società in cui secondo le accu...</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2026-03-13_003</td>
+      <td>Domenica a Bologna. Vi aspetto!</td>
+      <td>europa</td>
+      <td>0.410</td>
+      <td>debole</td>
+      <td>Domenica a Bologna. Vi aspetto! Domenica Piazza 15 marzo San Francesco Ore 10:30 Elly SCHLEIN \ { a Ya | » Lo 010 Le © | i © i Si i @ 4 À VOTA NO per difendere la Costituzione</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>2026-04-09_002</td>
+      <td>Quattro anni di governo Meloni: avevano i numeri per fare tutto e non hanno fatto nulla per migliorare la vita degli Italiani.</td>
+      <td>europa</td>
+      <td>0.409</td>
+      <td>debole</td>
+      <td>Quattro anni di governo Meloni: avevano i numeri per fare tutto e non hanno fatto nulla per migliorare la vita degli Italiani. Avevate i numeri qua dentro per fare tutto e non a...</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>2026-03-23_002</td>
+      <td>La mia conferenza stampa sull’esito del referendum costituzionale.</td>
+      <td>europa</td>
+      <td>0.408</td>
+      <td>debole</td>
+      <td>La mia conferenza stampa sull’esito del referendum costituzionale. Grazie a tutti. Oggi c'è stata una grandissima mobilitazione popolare. Oggi e ieri due giornate straordinarie ...</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>2026-03-24_001</td>
+      <td>Una grande mobilitazione popolare trainata dalle nuove generazioni ha fermato una riforma sbagliata. La Costituzione è di tutti, non di una parte.</td>
+      <td>giustizia</td>
+      <td>0.403</td>
+      <td>debole</td>
+      <td>Una grande mobilitazione popolare trainata dalle nuove generazioni ha fermato una riforma sbagliata. La Costituzione è di tutti, non di una parte. Questa è una vittoria vostra! ...</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>2026-03-19_003</td>
+      <td></td>
+      <td>sicurezza</td>
+      <td>0.399</td>
+      <td>debole</td>
+      <td>Meloni la smetta di difendere i suoi e cominci a difendere la dignità delle istituzioni e gli interessi italiani. Delmastro, già condannato per aver rivelato informazioni copert...</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>2026-03-23_001</td>
+      <td>Straordinaria partecipazione, una bella giornata per la democrazia! \nUn grande vittoria del NO contro una riforma sbagliata e per difendere la costituzione, in cui la mobilitazione della società civile e le nuove generazioni sono state decisive. \n\nOra guardiamo avanti e sentiamo tutta la responsabilità di costruire un’alternativa all’altezza delle speranze e dei bisogni delle persone.</td>
+      <td>giustizia</td>
+      <td>0.399</td>
+      <td>debole</td>
+      <td>Straordinaria partecipazione, una bella giornata per la democrazia! Un grande vittoria del NO contro una riforma sbagliata e per difendere la costituzione, in cui la mobilitazio...</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2026-03-13_001</td>
+      <td>Con le nostre volontarie e i nostri volontari saremo in tutta Italia con banchetti e volantinaggi per quest’ultimo fine settimana di campagna per il NO al referendum del 22 e 23 marzo!</td>
+      <td>europa</td>
+      <td>0.398</td>
+      <td>debole</td>
+      <td>Con le nostre volontarie e i nostri volontari saremo in tutta Italia con banchetti e volantinaggi per quest’ultimo fine settimana di campagna per il NO al referendum del 22 e 23...</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>2026-03-21_001</td>
+      <td>Come ogni anno, anche per questo 21 marzo, stavolta a Torino, camminiamo insieme a Libera, a tante associazioni e giovani nella Giornata della memoria e dell’impegno per le vittime innocenti delle mafie, fianco a fianco coi loro familiari che ancora lottano per avere verità e giustizia.</td>
+      <td>sicurezza</td>
+      <td>0.397</td>
+      <td>debole</td>
+      <td>Come ogni anno, anche per questo 21 marzo, stavolta a Torino, camminiamo insieme a Libera, a tante associazioni e giovani nella Giornata della memoria e dell’impegno per le vitt...</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>2026-04-02_001</td>
+      <td>Siamo vicini alle comunità regionali di Abruzzo, Molise e anche della Puglia alle prese con gravi eventi atmosferici che stanno determinando una situazione di particolare gravità sotto il profilo della sicurezza del territorio, delle infrastrutture e delle attività economiche.\n\nIn Abruzzo, come ampiamente riportato dagli organi di stampa, si registrano ingenti danni causati da precipitazioni intense, esondazioni e smottamenti che hanno interessato vaste aree del territorio regionale. Numerosi comuni in difficoltà risultano colpiti da allagamenti, interruzioni della viabilità e disagi diffusi alla popolazione, con conseguenti ripercussioni anche sulle attività produttive e sui servizi essenziali a partite dall’approvvigionamento idrico, dei servizi ospedalieri e dei collegamenti ferroviari.\n\nNell’area dell’Alto Molise, le abbondanti nevicate in quota stanno provocando difficoltà nei collegamenti, mentre si segnalano fenomeni franosi che compromettono la stabilità del territorio e la sicurezza delle infrastrutture. Nel Basso Molise, la situazione è ulteriormente aggravata dal crollo di un ponte lungo la Trignina, evento di estrema gravità che fa temere la possibile presenza di vittime e che ha determinato l’interruzione di un’arteria viaria strategica.\n\nL’intero comparto agricolo risulta duramente colpito, con coltivazioni danneggiate, terreni allagati e aziende in seria difficoltà, delineando un quadro complessivo di emergenza che richiede interventi urgenti e coordinati a sostegno dei territori interessati: serviranno anni per recuperare i danni di queste ore.\n\nPrendiamo atto della richiesta di dichiarazione dello stato di emergenza avanzata dai Presidente delle Regioni colpite ma diciamo al Governo di fare presto per non lasciare da soli sindaci, comunità e attività produttive.</td>
+      <td>sicurezza</td>
+      <td>0.388</td>
+      <td>debole</td>
+      <td>Siamo vicini alle comunità regionali di Abruzzo, Molise e anche della Puglia alle prese con gravi eventi atmosferici che stanno determinando una situazione di particolare gravit...</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>2026-04-02_004</td>
+      <td>La destra salva Giusi Bartolozzi, ma condanna 32 deputati che hanno difeso l’aula parlamentare dalla presenza di neofascisti.</td>
+      <td>giustizia</td>
+      <td>0.384</td>
+      <td>debole</td>
+      <td>La destra salva Giusi Bartolozzi, ma condanna 32 deputati che hanno difeso l’aula parlamentare dalla presenza di neofascisti. Perché oggi è successa una cosa gravissima, l'uffic...</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2026-03-13_002</td>
+      <td>Giorgia Meloni pensa davvero che gli italiani siano stupidi?</td>
+      <td>sicurezza</td>
+      <td>0.377</td>
+      <td>debole</td>
+      <td>Giorgia Meloni pensa davvero che gli italiani siano stupidi? e ono stupratore ‘A A Ma vi sembra normale che la Presidente del Consiglio dica che se vince il no ci saranno stupra...</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>2026-04-03_001</td>
+      <td>Come in Abruzzo e in Molise, anche in Puglia la situazione è critica a causa delle intense precipitazioni e dei fenomeni atmosferici estremi che hanno colpito le province di Foggia, della BAT e anche le aree più a sud, nel Tarantino.\n\nIl torrente Cervaro è esondato, arrivando a coprire diverse strade provinciali e causando disagi anche alla circolazione ferroviaria.\nL’esondazione dell’Ofanto ha causato ingenti danni alle coltivazioni, a strade e ferrovie.\nUn sentito ringraziamento ai vigili del fuoco e alla protezione civile, impegnati in queste ore negli interventi nelle zone più a rischio della regione.</td>
+      <td>ambiente</td>
+      <td>0.372</td>
+      <td>debole</td>
+      <td>Come in Abruzzo e in Molise, anche in Puglia la situazione è critica a causa delle intense precipitazioni e dei fenomeni atmosferici estremi che hanno colpito le province di Fog...</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>2026-03-20_006</td>
+      <td>La mia intervista di oggi su Avvenire.</td>
+      <td>immigrazione</td>
+      <td>0.354</td>
+      <td>debole</td>
+      <td>La mia intervista di oggi su Avvenire. ped On. ud ey +) oo | BY ‘bias » A ~ 7 «= P af A, È Perciò chiediamo alla premier di assicurare già da ora che, se Trump dovesse chiedere ...</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>2026-03-25_003</td>
+      <td>Delmastro e Bartolozzi hanno presentato dimissioni tardive ma necessarie, e abbiamo già presentato una mozione di sfiducia della ministra Santanché, che dopo le parole di Meloni ci aspettiamo venga calendarizzata subito e votata anche dalla maggioranza.</td>
+      <td>europa</td>
+      <td>0.347</td>
+      <td>debole</td>
+      <td>Delmastro e Bartolozzi hanno presentato dimissioni tardive ma necessarie, e abbiamo già presentato una mozione di sfiducia della ministra Santanché, che dopo le parole di Meloni...</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>2026-04-08_001</td>
+      <td></td>
+      <td>immigrazione</td>
+      <td>0.336</td>
+      <td>debole</td>
+      <td>La notizia della tregua va salutata positivamente, ma è fragilissima e tutti la devono rispettare, mentre Netanyahu continua a bombardare il Libano come se nulla fosse. Tajani h...</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>2026-04-02_002</td>
+      <td></td>
+      <td>giustizia</td>
+      <td>0.335</td>
+      <td>debole</td>
+      <td>0 Partito | Democratico Da anni Sotoudeh vive sotto costante sorveglianza ed e bersaglio del regime iraniano per il suo impegno in difesa dei diritti civili. La sua scomparsa fo...</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2026-03-12_003</td>
+      <td>Il governo non può dire a Trump sempre di sì.</td>
+      <td>sicurezza</td>
+      <td>0.321</td>
+      <td>debole</td>
+      <td>Il governo non può dire a Trump sempre di sì. Presidente, non può dire a Trump sempre di sì. Siamo tutti d'accordo che il regime deve fermare le ritorsioni inaccettabili, ma per...</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>2026-04-08_002</td>
+      <td>“Giulio Regeni era uno dei figli migliori di questo Paese. \nAvete perso un pezzo della vostra dignità.” - @gianni.cuperlo</td>
+      <td>giustizia</td>
+      <td>0.317</td>
+      <td>debole</td>
+      <td>“Giulio Regeni era uno dei figli migliori di questo Paese. Avete perso un pezzo della vostra dignità.” - @gianni.cuperlo Signor Ministro, le confesso che speravamo oggi, in un s...</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>2026-03-16_002</td>
+      <td>Vi aspetto a Napoli!</td>
+      <td>sicurezza</td>
+      <td>0.316</td>
+      <td>debole</td>
+      <td>Vi aspetto a Napoli! Martedì 17 marzo Ore 17:30 er difendere la Costituzione Stazione Marittima Napoli</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>2026-03-29_002</td>
+      <td>A nome del Partito democratico voglio esprimere tutta la nostra solidarietà al Cardinale Pizzaballa, a Padre Ielpo e a tutti i fedeli a cui le autorità israeliane hanno impedito oggi di celebrare la Messa delle Palme al Santo Sepolcro.\n\nLa violenza cieca e la protervia senza limiti del Governo israeliano ha raggiunto anche uno dei luoghi più sacri della cristianità, offendendo la dignità dei credenti e umiliando l’intera comunità cristiana. Colpire la libertà di culto è l’ennesima violazione dei più elementari diritti umani compiuta nella sostanziale impunità, e rappresenta un atto di ostilità nei confronti di milioni di cristiani nel mondo.\n\nSiamo vicini al Patriarca di Gerusalemme, al Custode del Santo Sepolcro e a tutta la comunità cristiana di Terrasanta, da sempre testimoni di un’idea di convivenza pacifica profondamente lontana dal suprematismo di Netanyahu e degli estremisti di destra suoi complici.\n\nIl Governo italiano esprima forte la sua condanna e prenda una volta per tutte le distanze dal criminale Governo Netanyahu, promuovendo azioni concrete per fermare e sanzionare le sue sistematiche violazioni dei diritti umani e delle libertà.</td>
+      <td>sicurezza</td>
+      <td>0.316</td>
+      <td>debole</td>
+      <td>A nome del Partito democratico voglio esprimere tutta la nostra solidarietà al Cardinale Pizzaballa, a Padre Ielpo e a tutti i fedeli a cui le autorità israeliane hanno impedito...</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>2026-03-14_001</td>
+      <td>Giorgia Meloni torni dal benzinaio da cui faceva i video a controllare ora i prezzi dei carburanti. \nLa guerra illegale di Trump e Netanyahu sta già costando al giorno agli italiani 16,5 milioni in più di carburanti. Il governo si sbrighi sulla nostra proposta di accise mobili.</td>
+      <td>immigrazione</td>
+      <td>0.315</td>
+      <td>debole</td>
+      <td>Giorgia Meloni torni dal benzinaio da cui faceva i video a controllare ora i prezzi dei carburanti. La guerra illegale di Trump e Netanyahu sta già costando al giorno agli itali...</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>2026-03-18_002</td>
+      <td>Gli italiani spendono 16 milioni e mezzo in più al giorno solo di carburanti. Sono passati dieci giorni dalla nostra proposta per abbassare le accise: il governo si deve sbrigare.</td>
+      <td>europa</td>
+      <td>0.313</td>
+      <td>debole</td>
+      <td>Gli italiani spendono 16 milioni e mezzo in più al giorno solo di carburanti. Sono passati dieci giorni dalla nostra proposta per abbassare le accise: il governo si deve sbrigar...</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>2026-04-07_001</td>
+      <td>Trump è arrivato a dire che questa notte potrebbe morire una intera civiltà.\nE questa è la stessa persona che Giorgia Meloni proponeva per il premio Nobel per la pace.</td>
+      <td>immigrazione</td>
+      <td>0.282</td>
+      <td>debole</td>
+      <td>Trump è arrivato a dire che questa notte potrebbe morire una intera civiltà. E questa è la stessa persona che Giorgia Meloni proponeva per il premio Nobel per la pace. smantella...</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>2026-04-09_001</td>
+      <td>Ancora non riescono a dire a Trump e Netanyahu: vi dovete fermare.</td>
+      <td>immigrazione</td>
+      <td>0.280</td>
+      <td>debole</td>
+      <td>Ancora non riescono a dire a Trump e Netanyahu: vi dovete fermare. Presidente, due giorni fa il Presidente Trump ha minacciato di morte un'intera civiltà, è lo stesso uomo per c...</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>2026-03-22_001</td>
+      <td>Buon voto!</td>
+      <td>europa</td>
+      <td>0.219</td>
+      <td>debole</td>
+      <td>Buon voto!</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>2026-03-15_001</td>
+      <td>Grazie alle atlete e agli atleti della nostra delegazione per l’impegno, il sacrificio e la passione che ci hanno regalato in questa edizione dei Giochi Paralimpici Invernali. Che risultati storici, 16 medaglie per l’Italia!</td>
+      <td>europa</td>
+      <td>0.203</td>
+      <td>debole</td>
+      <td>Grazie alle atlete e agli atleti della nostra delegazione per l’impegno, il sacrificio e la passione che ci hanno regalato in questa edizione dei Giochi Paralimpici Invernali. C...</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>2026-03-25_002</td>
+      <td>Anche Daniela Santanchè si è dimessa, comunque sempre troppo tardi.</td>
+      <td>immigrazione</td>
+      <td>0.163</td>
+      <td>debole</td>
+      <td>Anche Daniela Santanchè si è dimessa, comunque sempre troppo tardi. Santanchè si è dimessa</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
