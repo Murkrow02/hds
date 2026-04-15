@@ -6,7 +6,8 @@
         "sicurezza",
         "sfiducia",
         "immigrazione",
-        "_propaganda"
+        "propaganda",
+        "altro"
     ],
     "meaningful_categories": [
         "clima",
@@ -14,59 +15,36 @@
         "diritti",
         "sicurezza",
         "sfiducia",
-        "immigrazione"
+        "immigrazione",
+        "propaganda",
+        "altro"
     ],
     "youth_distribution": {
-        "clima": 0.2026,
-        "economia": 0.1484,
-        "diritti": 0.3564,
-        "sicurezza": 0.0785,
-        "sfiducia": 0.0771,
-        "immigrazione": 0.1369,
-        "_propaganda": 0.0
+        "clima": 0.2103,
+        "economia": 0.154,
+        "diritti": 0.37,
+        "sicurezza": 0.0815,
+        "sfiducia": 0.0801,
+        "immigrazione": 0.104,
+        "propaganda": 0.0,
+        "altro": 0.0
     },
     "politicians": [
         {
             "politician": "matteosalviniofficial",
-            "alignment_score": 0.9771,
+            "alignment_score": 0.8274,
             "distribution": {
-                "clima": 0.1627,
-                "economia": 0.1576,
-                "diritti": 0.2405,
-                "sicurezza": 0.0958,
-                "sfiducia": 0.2081,
-                "immigrazione": 0.1353,
-                "_propaganda": 0.3045
+                "clima": 0.1151,
+                "economia": 0.0983,
+                "diritti": 0.1917,
+                "sicurezza": 0.0827,
+                "sfiducia": 0.1816,
+                "immigrazione": 0.0868,
+                "propaganda": 0.0648,
+                "altro": 0.1791
             },
-            "noise_score": 0.3045
-        },
-        {
-            "politician": "ellyesse",
-            "alignment_score": 0.9681,
-            "distribution": {
-                "clima": 0.1771,
-                "economia": 0.1603,
-                "diritti": 0.2258,
-                "sicurezza": 0.0736,
-                "sfiducia": 0.2473,
-                "immigrazione": 0.1159,
-                "_propaganda": 0.5635
-            },
-            "noise_score": 0.5635
-        },
-        {
-            "politician": "giuseppeconte_ufficiale",
-            "alignment_score": 0.9651,
-            "distribution": {
-                "clima": 0.1638,
-                "economia": 0.1603,
-                "diritti": 0.2298,
-                "sicurezza": 0.0769,
-                "sfiducia": 0.2596,
-                "immigrazione": 0.1096,
-                "_propaganda": 0.5712
-            },
-            "noise_score": 0.5712
+            "noise_score": 0.0648,
+            "altro_score": 0.1791
         }
     ]
 }
