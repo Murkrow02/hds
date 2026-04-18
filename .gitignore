@@ -221,5 +221,7 @@ tools/content_scraping/session.txt
 data/content/**/**.jpg
 data/content/**/**.mp4
 data/content/**/info.json
+CLAUDE.md
+
 
 **/**/.DS_Store
